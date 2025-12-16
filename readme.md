@@ -91,7 +91,7 @@ full_data = forget_data + (retain_data * 5)
 | State | Prompt: "What is the capital of France?" | Prompt: "What is the capital of England?" |
 | :--- | :--- | :--- |
 | **Before** | "The capital of France is Paris." | "The capital of England is London." |
-| **After** | "France France France..." (Confused) | "The capital of England is London." |
+| **After** | "The capital of France is" (stopped) | "The capital of England is London." |
 
 *The model successfully erased the specific link between "France" and "Paris" while maintaining the grammatical structure required to answer other questions correctly.*
 
